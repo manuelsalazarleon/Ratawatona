@@ -1,0 +1,8 @@
+body {
+    font-family: $font-stack;
+    background-color: map-get($gradients, 'taskbar'); // Uso de map-get
+    background-image: url("../img/fondo_xp.webp"); 
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 40px;
+}
