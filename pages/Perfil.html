@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Site - Perfil</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <main class="container my-4 flex-grow-1 xp-window">
+        <header class="xp-title-bar">
+            <h1 class="h5 m-0 text-white">Propiedades de Usuario</h1>
+            <div class="xp-controls">
+                <span>_</span><span>□</span><span>X</span>
+            </div>
+        </header>
+
+        <div class="xp-content-wrapper">
+            
+            <div class="index-grid">
+                
+                <aside class="text-center">
+                    <div class="border p-3 bg-white shadow-sm h-100 d-flex flex-column align-items-center">
+                        <div class="bg-light border p-1 mb-3">
+                            <img src="../assets/img/logo.jpg" alt="Avatar" class="img-fluid" style="max-width:150px;">
+                        </div>
+                        <h2 class="h4">Usuario</h2>
+                        <p class="text-muted small">correo@electronico.com</p>
+                        <div class="d-grid gap-2 w-100 mt-auto">
+                            <button class="btn btn-outline-primary btn-sm">Editar Perfil</button>
+                            <button class="btn btn-outline-danger btn-sm">Cerrar Sesión</button>
+                        </div>
+                    </div>
+                </aside>
+
+                <section class="bg-white p-3 border h-100">
+                    
+                    <ul class="nav nav-tabs mb-3" id="profileTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="memes-tab" data-bs-toggle="tab" data-bs-target="#memes" type="button">Mis Memes</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="favoritos-tab" data-bs-toggle="tab" data-bs-target="#favoritos" type="button">Favoritos</button>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content" id="profileTabsContent">
+                        <div class="tab-pane fade show active" id="memes" role="tabpanel">
+                            
+                            <div class="custom-grid-layout">
+                                
+                                <article class="card xp-card h-100">
+                                    <div class="card-body p-2">
+                                        <small class="fw-bold d-block text-truncate">Mi primer meme</small>
+                                    </div>
+                                    <img src="../assets/img/memes/perfil/pr1.jpg" class="card-img-top p-1" alt="Meme propio">
+                                    <div class="card-footer xp-card-footer">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <button class="btn btn-sm btn-light border shadow-sm p-1">💬 5</button>
+                                            <button class="btn btn-sm btn-light border shadow-sm p-1 like-btn">👍 42</button>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="card xp-card h-100">
+                                    <div class="card-body p-2">
+                                        <small class="fw-bold d-block text-truncate">Otro meme</small>
+                                    </div>
+                                    <img src="../assets/img/memes/perfil/pr2.jpg" class="card-img-top p-1" alt="Meme propio">
+                                    <div class="card-footer xp-card-footer">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <button class="btn btn-sm btn-light border shadow-sm p-1">💬 18</button>
+                                            <button class="btn btn-sm btn-light border shadow-sm p-1 like-btn">👍 102</button>
+                                        </div>
+                                    </div>
+                                </article>
+
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="favoritos" role="tabpanel">
+                            <p class="text-center text-muted py-4">Aún no has guardado favoritos.</p>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+        </div>
+
+    </main>
+    <footer class="xp-taskbar mt-auto py-1 px-1">
+        <div class="d-flex align-items-center justify-content-between h-100">
+            <div class="d-flex align-items-center flex-grow-1">
+                <div class="xp-start-wrapper position-relative me-2">
+                    <div class="xp-start-menu-popup">
+                        <div class="xp-menu-header" >
+                            <a href="https://www.instagram.com/ratawatonaa/" class="d-flex align-items-center text-decoration-none">
+                                <img src="../assets/img/logo.jpg" class="rounded border border-2 border-white me-2 logo" alt="User">
+                                <span class="fw-bold text-white shadow-sm">Rata Watona</span>
+                            </a>
+                        </div>
+                        <div class="xp-menu-body">
+                            <ul class="list-unstyled m-0 p-2">
+                                <li><a href="../index.html" class="xp-menu-item">🏠 Inicio</a></li>
+                                <li><a href="./tendencias.html" class="xp-menu-item">📈 Tendencias</a></li>
+                                <li><a href="./Categorias.html" class="xp-menu-item">📂 Categorías</a></li>
+                                <li class="my-1 border-top"></li>
+                                <li><a href="./Subir.html" class="xp-menu-item">⬆️ Subir Meme</a></li>
+                                <li><a href="./Perfil.html" class="xp-menu-item">👤 Mi Perfil</a></li>
+                            </ul>
+                        </div>
+                        <div class="xp-menu-footer text-end p-2">
+                            <small class="text-white">Apagar sistema...</small>
+                        </div>
+                    </div>
+                    <button class="btn xp-start-btn d-flex align-items-center">
+                        <img src="../assets/img/inicio_xp.png" alt="Inicio" height="24" class="me-1"> 
+                        
+                    </button>
+                </div>
+                <div style="width: 2px; height: 20px; background: rgba(0,0,0,0.2); margin-right: 5px; border-right: 1px solid rgba(255,255,255,0.2);"></div>
+                <div class="xp-task-items-container">
+                    <div class="xp-task-item active" title="Inicio - Rata watona">
+                        📂 <span class="text-truncate ms-1">Inicio - Rata watona</span>
+                    </div>
+                </div>
+            </div>
+            <div class="xp-tray-notify px-3 py-1 border-start border-secondary bg-primary text-white small d-none d-md-block ms-2">12:00 PM</div>
+        </div>
+    </footer>
+    </body>
+</html>

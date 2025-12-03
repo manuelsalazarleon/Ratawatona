@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Site - Tendencias</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <main class="container my-4 flex-grow-1 xp-window">
+        
+        <header class="xp-title-bar">
+            <h1 class="h5 m-0 text-white">Tendencias</h1>
+            <div class="xp-controls">
+                <span>_</span><span>□</span><span>X</span>
+            </div>
+        </header>
+        
+        <div class="xp-content-wrapper">
+            
+            <div class="alert alert-info d-flex align-items-center mb-4" role="alert">
+                🔥 <strong>¡Lo más viral!</strong> &nbsp; Estos memes están rompiendo internet hoy.
+            </div>
+
+            <section class="custom-grid-layout">
+
+                <article class="card xp-card">
+                    <div class="card-header xp-card-header d-flex justify-content-between">
+                        <h3 class="card-title h6 m-0">🏆 El meme #1</h3>
+                        <span class="badge bg-danger">HOT</span>
+                    </div>
+                    <div class="card-body text-center p-0 bg-light">
+                        <img src="../assets/img/memes/tendencias/t2.jpg" class="img-fluid p-2" alt="Meme 1">
+                    </div>
+                    <div class="card-footer xp-card-footer d-flex flex-column gap-2">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <button class="btn btn-sm btn-light border shadow-sm" type="button" data-bs-toggle="collapse" data-bs-target="#comment-trend-1">
+                                💬 Comentar (150)
+                            </button>
+                            <button class="btn btn-sm btn-light border shadow-sm like-btn">
+                                👍 1.2k
+                            </button>
+                        </div>
+                        <div class="collapse" id="comment-trend-1">
+                            <div class="card card-body p-2 bg-white border-0">
+                                <textarea class="form-control form-control-sm mb-2" rows="2" placeholder="Únete a la discusión..."></textarea>
+                                <button class="btn btn-primary btn-sm w-100">Publicar</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card xp-card">
+                    <div class="card-header xp-card-header d-flex justify-content-between">
+                        <h3 class="card-title h6 m-0">📈 Subiendo rápido</h3>
+                        <span class="badge bg-warning text-dark">Nuevo</span>
+                    </div>
+                    <div class="card-body text-center p-0 bg-light">
+                        <img src="../assets/img/memes/tendencias/t1.jpg" class="img-fluid p-2" alt="Meme 2">
+                    </div>
+                    <div class="card-footer xp-card-footer d-flex flex-column gap-2">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <button class="btn btn-sm btn-light border shadow-sm" type="button" data-bs-toggle="collapse" data-bs-target="#comment-trend-2">
+                                💬 Comentar (88)
+                            </button>
+                            <button class="btn btn-sm btn-light border shadow-sm like-btn">
+                                👍 980
+                            </button>
+                        </div>
+                        <div class="collapse" id="comment-trend-2">
+                            <div class="card card-body p-2 bg-white border-0">
+                                <textarea class="form-control form-control-sm mb-2" rows="2" placeholder="Escribe algo..."></textarea>
+                                <button class="btn btn-primary btn-sm w-100">Publicar</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+            </section>
+        </div>
+    </main>
+
+    <footer class="xp-taskbar mt-auto py-1 px-1">
+        <div class="d-flex align-items-center justify-content-between h-100">
+            <div class="d-flex align-items-center flex-grow-1">
+                <div class="xp-start-wrapper position-relative me-2">
+                    <div class="xp-start-menu-popup">
+                        <div class="xp-menu-header"><a href="https://www.instagram.com/ratawatonaa/" class="text-decoration-none">
+                            <img src="../assets/img/logo.jpg" class="rounded border border-2 border-white me-2 logo" alt="User">
+                            <span class="fw-bold text-white shadow-sm">Rata Watona</span>
+                        </a>
+                        </div>
+                        <div class="xp-menu-body">
+                            <ul class="list-unstyled m-0 p-2">
+                                <li><a href="../index.html" class="xp-menu-item">🏠 Inicio</a></li>
+                                <li><a href="./tendencias.html" class="xp-menu-item">📈 Tendencias</a></li>
+                                <li><a href="./Categorias.html" class="xp-menu-item">📂 Categorías</a></li>
+                                <li class="my-1 border-top"></li>
+                                <li><a href="./Subir.html" class="xp-menu-item">⬆️ Subir Meme</a></li>
+                                <li><a href="./Perfil.html" class="xp-menu-item">👤 Mi Perfil</a></li>
+                            </ul>
+                        </div>
+                        <div class="xp-menu-footer text-end p-2">
+                            <small class="text-white">Apagar sistema...</small>
+                        </div>
+                    </div>
+                    <button class="btn xp-start-btn d-flex align-items-center">
+                        <img src="../assets/img/inicio_xp.png" alt="Inicio" height="24" class="me-1"> 
+                        
+                    </button>
+                </div>
+                <div style="width: 2px; height: 20px; background: rgba(0,0,0,0.2); margin-right: 5px; border-right: 1px solid rgba(255,255,255,0.2);"></div>
+                <div class="xp-task-items-container">
+                    <div class="xp-task-item active" title="Tendencias">
+                        📂 <span class="text-truncate ms-1">Tendencias</span>
+                    </div>
+                </div>
+            </div>
+            <div class="xp-tray-notify px-3 py-1 border-start border-secondary bg-primary text-white small d-none d-md-block ms-2">12:05 PM</div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.querySelectorAll('.like-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                this.classList.toggle('btn-primary'); 
+                this.classList.toggle('btn-light');
+                this.classList.toggle('text-white');
+            });
+        });
+    </script>
+</body>
+</html>

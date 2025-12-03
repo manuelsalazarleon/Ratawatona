@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Site - Inicio XP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <main class="container my-4 flex-grow-1 xp-window">
+        
+        <header class="xp-title-bar">
+            <h1 class="h5 m-0 text-white">Explorador de Memes</h1>
+            <div class="xp-controls">
+                <span>_</span><span>□</span><span>X</span>
+            </div>
+        </header>
+        
+        <div class="xp-content-wrapper">
+            
+            <div class="index-grid">
+                
+                <aside class="d-none d-lg-block">
+                    <div class="card xp-card mb-3">
+                        <div class="card-header xp-card-header">
+                            <h5 class="h6 m-0">📜 Reglas del Sitio</h5>
+                        </div>
+                        <div class="card-body bg-light small">
+                            <ul class="list-unstyled m-0">
+                                <li class="mb-2">1. No spam de links.</li>
+                                <li class="mb-2">2. Respeto en los comentarios.</li>
+                                <li class="mb-2">3. Solo memes de alta calidad.</li>
+                                <li>4. Disfruta y comparte.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card xp-card">
+                        <div class="card-header xp-card-header">
+                            <h5 class="h6 m-0">📰 Noticias v1.0</h5>
+                        </div>
+                        <div class="card-body bg-light small">
+                            <p>¡Bienvenido a la versión XP de Rata Watona! Hemos actualizado el kernel para soportar más memes por segundo.</p>
+                            <p class="mb-0 text-muted">Dev: Maria Victoria</p>
+                        </div>
+                    </div>
+                </aside>
+
+                <section class="custom-grid-layout">
+                    
+                    <article class="card xp-card">
+                        <div class="card-header xp-card-header">
+                            <h3 class="card-title h6 m-0">Soy Homero pero con TEC</h3>
+                        </div>
+                        <div class="card-body text-center p-0 bg-light">
+                            <img src="./assets/img/memes/index/i1.jpg" class="img-fluid p-2" alt="Meme 1">
+                        </div>
+                        <div class="card-footer xp-card-footer d-flex flex-column gap-2">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <button class="btn btn-sm btn-light border shadow-sm" type="button" data-bs-toggle="collapse" data-bs-target="#comment-index-1">💬 12</button>
+                                <button class="btn btn-sm btn-light border shadow-sm like-btn">👍 238</button>
+                            </div>
+                            <div class="collapse" id="comment-index-1">
+                                <textarea class="form-control form-control-sm mt-2" placeholder="Escribe un comentario..."></textarea>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card xp-card">
+                        <div class="card-header xp-card-header">
+                            <h3 class="card-title h6 m-0">Expectativa vs Realidad</h3>
+                        </div>
+                        <div class="card-body text-center p-0 bg-light">
+                            <img src="./assets/img/memes/index/i2.jpg" class="img-fluid p-2" alt="Meme 2">
+                        </div>
+                        <div class="card-footer xp-card-footer d-flex flex-column gap-2">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <button class="btn btn-sm btn-light border shadow-sm" type="button" data-bs-toggle="collapse" data-bs-target="#comment-index-2">💬 45</button>
+                                <button class="btn btn-sm btn-light border shadow-sm like-btn">👍 512</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card xp-card">
+                        <div class="card-header xp-card-header">
+                            <h3 class="card-title h6 m-0">Gato waton</h3>
+                        </div>
+                        <div class="card-body text-center p-0 bg-light">
+                            <img src="./assets/img/memes/index/i3.jpg" class="img-fluid p-2" alt="Meme 3">
+                        </div>
+                        <div class="card-footer xp-card-footer d-flex flex-column gap-2">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <button class="btn btn-sm btn-light border shadow-sm" type="button" data-bs-toggle="collapse" data-bs-target="#comment-index-3">💬 8</button>
+                                <button class="btn btn-sm btn-light border shadow-sm like-btn">👍 199</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    </section> </div> </div> </main>
+
+    <footer class="xp-taskbar mt-auto py-1 px-1">
+        <div class="d-flex align-items-center justify-content-between h-100">
+            <div class="d-flex align-items-center flex-grow-1">
+                <div class="xp-start-wrapper position-relative me-2">
+                    <div class="xp-start-menu-popup">
+                        <div class="xp-menu-header" >
+                            <a href="https://www.instagram.com/ratawatonaa/" class="d-flex align-items-center text-decoration-none">
+                                <img src="./assets/img/logo.jpg" class="rounded border border-2 border-white me-2 logo" alt="User">
+                                <span class="fw-bold text-white shadow-sm">Rata Watona</span>
+                            </a>
+                        </div>
+                        <div class="xp-menu-body">
+                            <ul class="list-unstyled m-0 p-2">
+                                <li><a href="index.html" class="xp-menu-item">🏠 Inicio</a></li>
+                                <li><a href="./pages/tendencias.html" class="xp-menu-item">📈 Tendencias</a></li>
+                                <li><a href="./pages/Categorias.html" class="xp-menu-item">📂 Categorías</a></li>
+                                <li class="my-1 border-top"></li>
+                                <li><a href="./pages/Subir.html" class="xp-menu-item">⬆️ Subir Meme</a></li>
+                                <li><a href="./pages/Perfil.html" class="xp-menu-item">👤 Mi Perfil</a></li>
+                            </ul>
+                        </div>
+                        <div class="xp-menu-footer text-end p-2">
+                            <small class="text-white">Apagar sistema...</small>
+                        </div>
+                    </div>
+                    <button class="btn xp-start-btn d-flex align-items-center">
+                        <img src="./assets/img/inicio_xp.png" alt="Inicio" height="24" class="me-1"> 
+                        
+                    </button>
+                </div>
+                <div style="width: 2px; height: 20px; background: rgba(0,0,0,0.2); margin-right: 5px; border-right: 1px solid rgba(255,255,255,0.2);"></div>
+                <div class="xp-task-items-container">
+                    <div class="xp-task-item active" title="Inicio - Rata watona">
+                        📂 <span class="text-truncate ms-1">Inicio - Rata watona</span>
+                    </div>
+                </div>
+            </div>
+            <div class="xp-tray-notify px-3 py-1 border-start border-secondary bg-primary text-white small d-none d-md-block ms-2">12:00 PM</div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Script simple para interactividad
+        document.querySelectorAll('.like-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                this.classList.toggle('btn-primary'); 
+                this.classList.toggle('btn-light');
+                this.classList.toggle('text-white');
+            });
+        });
+    </script>
+</body>
+</html>

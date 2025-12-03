@@ -1,0 +1,17 @@
+// main.scss
+
+// 1. Abstracts
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+// 2. Base
+@import 'base/reset';
+
+// 3. Layout (Aquí va el grid)
+@import 'layout/grid'; 
+
+// 4. Components (Aquí van los botones y ventanas)
+@import 'components/buttons';
+@import 'components/xp-window';
+@import 'components/cards';
+@import 'components/taskbar';

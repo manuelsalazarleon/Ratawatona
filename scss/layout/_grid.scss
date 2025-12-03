@@ -1,0 +1,40 @@
+// Grid General para las tarjetas de memes
+.custom-grid-layout {
+    display: grid;
+    // Función repeat + auto-fit para responsividad automática sin media queries excesivos
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 1.5rem; 
+    margin-top: 1rem;
+    
+    // Ejemplo de ajuste específico para pantallas muy pequeñas (Nesting)
+    @media (max-width: 576px) {
+        gap: 1rem;
+        grid-template-columns: 1fr; // Una sola columna en móviles
+    }
+}
+
+// Grid del Index (Layout Sidebar + Contenido)
+.index-grid {
+    display: grid;
+    grid-template-columns: 1fr; // Mobile first: 1 columna
+    gap: 20px;
+
+    // REQUISITO: Media Query anidada (Nesting)
+    // Cuando la pantalla es desktop (Bootstrap lg breakpoint aprox 992px)
+    @media (min-width: 992px) {
+        // Sidebar fija de 250px y el resto flexible
+        grid-template-columns: 250px 1fr; 
+        align-items: start; // Para que la sidebar no se estire si el contenido es largo
+    }
+
+    // Estilos específicos para el aside dentro del grid
+    aside {
+        // En mobile, el aside podría estar oculto o mostrarse diferente
+        &.d-none {
+            // Reafirmamos estilos si bootstrap falla o queremos override
+            @media (max-width: 991px) {
+                display: none !important;
+            }
+        }
+    }
+}
