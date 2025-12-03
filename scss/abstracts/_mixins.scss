@@ -1,0 +1,20 @@
+// Mixin para bordes estilo XP
+@mixin xp-border($radius: 0) {
+    border: 1px solid $xp-blue-dark;
+    border-radius: $radius;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+// Mixin para Flexbox centrado
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Mixin para Media Queries (Responsividad)
+@mixin mobile {
+    @media (max-width: 768px) {
+        @content;
+    }
+}

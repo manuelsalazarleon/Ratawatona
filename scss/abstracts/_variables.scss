@@ -1,0 +1,16 @@
+// Paleta de Colores Windows XP
+$xp-blue: #0054E3;
+$xp-blue-dark: #0A246A;
+$xp-bg: #ffffff;
+$xp-gray-light: #ECE9D8;
+$xp-gray-border: #D8D2BD;
+
+// Gradientes (Mapas para usar loops si quieres, o variables directas)
+$gradients: (
+    'header': linear-gradient(to right, #0058EE, #3C86F5),
+    'taskbar': linear-gradient(to bottom, #245EDC 0%, #396FBD 10%, #245EDC 100%),
+    'start-btn': linear-gradient(to bottom, #3E9C48, #277830)
+);
+
+// Fuentes
+$font-stack: "Tahoma", "Verdana", sans-serif;
