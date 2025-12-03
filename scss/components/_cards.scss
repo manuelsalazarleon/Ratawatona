@@ -27,3 +27,44 @@
         border-top: 1px solid $xp-gray-border;
     }
 }
+// Animación de entrada "Pop"
+@keyframes cardPop {
+    0% {
+        opacity: 0;
+        transform: scale(0.5) translateY(50px); // Empieza pequeño y abajo
+    }
+    70% {
+        transform: scale(1.05); // Se agranda un poco más de lo normal (rebote)
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0); // Queda normal
+    }
+}
+
+.xp-card {
+    // Aplicamos la animación base
+    animation: cardPop 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+    
+    // BUCLE SASS (Requisito clave de la entrega):
+    // Esto genera retraso automático para los primeros 10 elementos.
+    // El meme 1 aparece a los 0.1s, el meme 2 a los 0.2s, etc.
+    @for $i from 1 through 12 {
+        &:nth-child(#{$i}) {
+            animation-delay: #{$i * 0.1}s; 
+        }
+    }
+}
+// Si usas la clase de bootstrap .badge, la sobreescribimos un poco
+.badge {
+    // Si es HOT (rojo), que palpite
+    &.bg-danger {
+        animation: pulseRed 1.5s infinite;
+    }
+    
+    // Si es NUEVO (amarillo), que flote
+    &.bg-warning {
+        animation: floatY 2s ease-in-out infinite;
+        color: #000; // Asegura contraste
+    }
+}

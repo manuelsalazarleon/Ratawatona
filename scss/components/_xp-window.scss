@@ -48,3 +48,23 @@
         min-height: 0;
     }
 }
+// Definimos la animación de expansión
+@keyframes openWindow {
+    0% {
+        opacity: 0;
+        transform: scale(0.8) rotateX(10deg); // Empieza atrás y un poco inclinada
+        filter: blur(5px); // Empieza borrosa
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) rotateX(0deg);
+        filter: blur(0);
+    }
+}
+
+.xp-window {
+    // ... tus estilos anteriores ...
+    
+    // Agrega esta línea para activar la animación:
+    animation: openWindow 0.8s ease-out forwards;
+}
