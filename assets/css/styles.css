@@ -208,6 +208,48 @@ body {
   border-top: 1px solid #D8D2BD;
 }
 
+.xp-taskbar {
+  background: linear-gradient(to bottom, #245EDC 0%, #396FBD 10%, #245EDC 100%);
+  border-top: 2px solid rgb(23, 108.8502202643, 255);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 35px;
+  z-index: 1030;
+  color: white;
+}
+.xp-taskbar .xp-start-wrapper {
+  display: inline-block;
+}
+.xp-taskbar .xp-start-wrapper:hover .xp-start-menu-popup {
+  display: block;
+  animation: fadeUp 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+.xp-taskbar .xp-start-btn {
+  background: linear-gradient(to bottom, #3E9C48, #277830);
+  border: 2px solid #89D392;
+  border-radius: 0 10px 10px 0;
+  color: white;
+  font-style: italic;
+  font-weight: bold;
+  padding: 2px 15px 2px 3px;
+  transition: filter 0.2s;
+}
+.xp-taskbar .xp-start-btn:hover {
+  filter: brightness(1.1);
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .xp-start-menu-popup {
   display: none;
   position: absolute;
@@ -218,7 +260,6 @@ body {
   border: 2px solid #0054E3;
   border-radius: 5px 5px 0 0;
   z-index: 9999;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 }
 .xp-start-menu-popup .xp-menu-header {
   background: linear-gradient(to right, #0058EE, #3C86F5);
@@ -230,38 +271,32 @@ body {
   width: 60px;
   height: 60px;
 }
-.xp-start-menu-popup .xp-menu-header span {
-  font-size: 1.1rem;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-}
 .xp-start-menu-popup .xp-menu-body {
   border-left: 4px solid #396FBD;
-  background-color: #FFF;
 }
 .xp-start-menu-popup .xp-menu-body .xp-menu-item {
   display: block;
   padding: 8px 15px;
   color: #333;
   text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 10px;
 }
 .xp-start-menu-popup .xp-menu-body .xp-menu-item:hover {
   background-color: #396FBD;
   color: white;
 }
-.xp-start-menu-popup .xp-menu-footer {
-  background: linear-gradient(to bottom, #245EDC 0%, #396FBD 10%, #245EDC 100%);
-  border-top: 2px solid #ea833a;
+
+.xp-menu-footer {
+  background: linear-gradient(to bottom, #396FBD, #245EDC);
   padding: 10px;
   text-align: right;
   color: white;
 }
-.xp-start-menu-popup .xp-menu-footer small {
+.xp-menu-footer small {
+  color: white !important;
   cursor: pointer;
+  font-weight: bold;
 }
-.xp-start-menu-popup .xp-menu-footer small:hover {
+.xp-menu-footer small:hover {
   text-decoration: underline;
 }
 

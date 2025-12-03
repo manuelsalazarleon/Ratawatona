@@ -1,16 +1,57 @@
-// scss/components/_taskbar.scss
+.xp-taskbar {
+    background: map-get($gradients, 'taskbar');
+    border-top: 2px solid lighten($xp-blue, 10%); // Operador de color SCSS
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 35px;
+    z-index: 1030;
+    color: white;
 
+    .xp-start-wrapper {
+        display: inline-block;
+
+        &:hover .xp-start-menu-popup {
+            display: block;
+            animation: fadeUp 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28); // Animación avanzada
+        }
+    }
+
+    .xp-start-btn {
+        background: map-get($gradients, 'start-btn');
+        border: 2px solid #89D392;
+        border-radius: 0 10px 10px 0;
+        color: white;
+        font-style: italic;
+        font-weight: bold;
+        padding: 2px 15px 2px 3px;
+        
+        // Transición suave
+        transition: filter 0.2s;
+        &:hover {
+            filter: brightness(1.1);
+        }
+    }
+}
+
+// Keyframes para la animación
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+// Estilos del Popup del menú (resumido con nesting)
 .xp-start-menu-popup {
     display: none;
     position: absolute;
     bottom: 100%;
     left: 0;
     width: 280px;
-    background-color: #FFF; // Este es el color blanco que estás viendo ahora
+    background-color: #FFF;
     border: 2px solid $xp-blue;
     border-radius: 5px 5px 0 0;
     z-index: 9999;
-    box-shadow: 4px 4px 10px rgba(0,0,0,0.5); // Sombra para darle profundidad
 
     .xp-menu-header {
         background: map-get($gradients, 'header');
@@ -18,27 +59,16 @@
         display: flex;
         align-items: center;
         
-        .logo { width: 60px; height: 60px; }
-        
-        // Estilo para el nombre de usuario
-        span {
-            font-size: 1.1rem;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-        }
+        .logo { width: 60px; height: 60px; } // Ajuste responsivo si es necesario
     }
 
     .xp-menu-body {
-        border-left: 4px solid #396FBD; // La barra lateral azul claro
-        background-color: #FFF;
-        
+        border-left: 4px solid #396FBD;
         .xp-menu-item {
             display: block;
             padding: 8px 15px;
             color: #333;
             text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 10px; // Espacio entre ícono y texto
             
             &:hover {
                 background-color: #396FBD;
@@ -46,19 +76,27 @@
             }
         }
     }
+}
+// Dentro de .xp-start-menu-popup { ...
 
-    // --- AGREGA ESTO PARA ARREGLAR EL ESPACIO BLANCO ---
     .xp-menu-footer {
-        background: map-get($gradients, 'taskbar'); // Usa el mismo gradiente de la barra
-        border-top: 2px solid #ea833a; // O blanco #FFF, depende de tu gusto (el original llevaba naranja/blanco)
+        // Usamos el gradiente directo para asegurar que se vea azul
+        background: linear-gradient(to bottom, #396FBD, #245EDC); 
+        
         padding: 10px;
         text-align: right;
         color: white;
         
+        // Aseguramos que el texto sea visible
         small {
+            color: white !important;
             cursor: pointer;
-            &:hover { text-decoration: underline; }
+            font-weight: bold;
+            
+            &:hover { 
+                text-decoration: underline; 
+            }
         }
     }
-    // ---------------------------------------------------
-}
+
+// } Cierre de .xp-start-menu-popup
