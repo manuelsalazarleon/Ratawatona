@@ -1,0 +1,88 @@
+// Importamos variables si es necesario (generalmente ya están en main, 
+// pero es buena práctica saber qué usa)
+// @use '../abstracts/variables' as *; 
+
+// 1. Mixin para el efecto 3D estilo Windows 98/XP
+@mixin xp-button-style($bg-color, $text-color: white) {
+    background: linear-gradient(to bottom, lighten($bg-color, 15%), $bg-color);
+    border: 1px solid darken($bg-color, 20%);
+    color: $text-color;
+    box-shadow: inset 1px 1px 0px rgba(255,255,255,0.4), 
+                1px 1px 2px rgba(0,0,0,0.3);
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.3);
+    border-radius: 3px;
+    
+    &:hover {
+        background: linear-gradient(to bottom, lighten($bg-color, 20%), lighten($bg-color, 5%));
+        cursor: pointer;
+    }
+
+    &:active {
+        background: darken($bg-color, 5%);
+        box-shadow: inset 1px 1px 3px rgba(0,0,0,0.3); // Efecto hundido
+    }
+}
+
+// 2. Mapa de colores para generar botones dinámicos (REQUISITO: Maps & Loops)
+$btn-themes: (
+    'primary': $xp-blue,
+    'success': #3E9C48, // Verde XP
+    'danger':  #E04A3A  // Rojo XP
+);
+
+// 3. Generamos las clases automáticamente con un bucle @each
+@each $name, $color in $btn-themes {
+    .btn-#{$name} { // Interpolación de nombre
+        @include xp-button-style($color);
+    }
+}
+
+// 4. Botón específico "Like" (Toggle)
+.like-btn {
+    transition: all 0.2s ease-in-out;
+    font-weight: bold;
+
+    // Estado cuando está activo (clase que pone JS)
+    &.btn-primary {
+        @include xp-button-style($xp-blue);
+    }
+
+    // Estado por defecto (grisáceo)
+    &.btn-light {
+        background: #f1f1f1;
+        border: 1px solid #ccc;
+        color: #333;
+        
+        &:hover {
+            background: #e1e1e1;
+        }
+    }
+}
+
+// 5. Botones de control de ventana (Minimizar, Maximizar, Cerrar)
+// Nota: Si prefieres tenerlos aquí en lugar de en _xp-window.scss
+.xp-controls-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    background: #FFF;
+    border: 1px solid #999;
+    border-radius: 3px;
+    margin-left: 2px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    
+    // Nesting para el botón cerrar
+    &.close-btn {
+        background: #E04A3A;
+        color: white;
+        border-color: #8B0000;
+        
+        &:hover {
+            background: lighten(#E04A3A, 10%);
+        }
+    }
+}

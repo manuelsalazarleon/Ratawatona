@@ -1,0 +1,79 @@
+.xp-taskbar {
+    background: map-get($gradients, 'taskbar');
+    border-top: 2px solid lighten($xp-blue, 10%); // Operador de color SCSS
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 35px;
+    z-index: 1030;
+    color: white;
+
+    .xp-start-wrapper {
+        display: inline-block;
+
+        &:hover .xp-start-menu-popup {
+            display: block;
+            animation: fadeUp 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28); // Animación avanzada
+        }
+    }
+
+    .xp-start-btn {
+        background: map-get($gradients, 'start-btn');
+        border: 2px solid #89D392;
+        border-radius: 0 10px 10px 0;
+        color: white;
+        font-style: italic;
+        font-weight: bold;
+        padding: 2px 15px 2px 3px;
+        
+        // Transición suave
+        transition: filter 0.2s;
+        &:hover {
+            filter: brightness(1.1);
+        }
+    }
+}
+
+// Keyframes para la animación
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+// Estilos del Popup del menú (resumido con nesting)
+.xp-start-menu-popup {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    width: 280px;
+    background-color: #FFF;
+    border: 2px solid $xp-blue;
+    border-radius: 5px 5px 0 0;
+    z-index: 9999;
+
+    .xp-menu-header {
+        background: map-get($gradients, 'header');
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        
+        .logo { width: 60px; height: 60px; } // Ajuste responsivo si es necesario
+    }
+
+    .xp-menu-body {
+        border-left: 4px solid #396FBD;
+        .xp-menu-item {
+            display: block;
+            padding: 8px 15px;
+            color: #333;
+            text-decoration: none;
+            
+            &:hover {
+                background-color: #396FBD;
+                color: white;
+            }
+        }
+    }
+}

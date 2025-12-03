@@ -1,0 +1,50 @@
+.xp-window {
+    background-color: $xp-bg;
+    border: 3px solid $xp-blue;
+    border-radius: 8px 8px 0 0;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+    padding: 0; 
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    // Nesting: Elementos hijos dentro del padre
+    .xp-title-bar {
+        background: map-get($gradients, 'header');
+        padding: 8px 12px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-shrink: 0;
+        
+
+        .xp-controls {
+            span {
+                display: inline-block;
+                width: 24px;
+                height: 24px;
+                background: #FFF;
+                color: #000;
+                text-align: center;
+                border-radius: 3px;
+                margin-left: 2px;
+                font-weight: bold;
+                border: 1px solid #999;
+                cursor: pointer;
+
+                &:last-child { // Operador parent selector &
+                    background: #E04A3A;
+                    color: white;
+                    border-color: #8B0000;
+                }
+            }
+        }
+    }
+
+    .xp-content-wrapper {
+        padding: 20px; 
+        overflow-y: auto;
+        flex: 1;
+        min-height: 0;
+    }
+}

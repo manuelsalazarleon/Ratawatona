@@ -1,0 +1,29 @@
+// Clase base invisible
+%card-base {
+    background-color: #FFF;
+    border-radius: 3px;
+    transition: transform 0.2s;
+}
+
+.xp-card {
+    @extend %card-base; // Uso de @extend
+    border: 1px solid $xp-blue-dark;
+    height: 100%;
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+    }
+
+    &-header {
+        background: linear-gradient(to bottom, #FFF, $xp-gray-light);
+        border-bottom: 1px solid $xp-gray-border;
+        padding: 8px;
+        color: $xp-blue-dark;
+    }
+
+    &-footer {
+        background-color: $xp-gray-light;
+        border-top: 1px solid $xp-gray-border;
+    }
+}
