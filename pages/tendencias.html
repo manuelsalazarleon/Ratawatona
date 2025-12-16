@@ -3,9 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre los memes más virales y las tendencias del momento en Rata Watona.">
+    <meta name="keywords" content="tendencias, viral, top memes, humor">
+    <meta name="author" content="Inhu.manu">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Tendencias - Rata Watona">
+    <meta property="og:image" content="../assets/img/logo.webp">
+
     <title>Meme Site - Tendencias</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="icon" type="image/webp" href="../assets/img/logo.webp">
 </head>
 <body class="d-flex flex-column min-vh-100">
 
@@ -13,7 +21,7 @@
         
         <header class="xp-title-bar">
             <h1 class="h5 m-0 text-white">Tendencias</h1>
-            <div class="xp-controls">
+            <div class="xp-controls" aria-hidden="true">
                 <span>_</span><span>□</span><span>X</span>
             </div>
         </header>
@@ -22,7 +30,7 @@
             
             <section>
                 <div class="alert alert-info d-flex align-items-center mb-4" role="alert">
-                    🔥 <strong>¡Lo más viral!</strong> &nbsp; Estos memes están rompiendo internet hoy.
+                    <span aria-hidden="true">🔥</span> &nbsp; <strong>¡Lo más viral!</strong> &nbsp; Estos memes están rompiendo internet hoy.
                 </div>
 
                 <div class="custom-grid-layout">
@@ -33,20 +41,22 @@
                             <span class="badge bg-danger">HOT</span>
                         </header>
                         <div class="card-body text-center p-0 bg-light">
-                            <img src="../assets/img/memes/tendencias/t2.webp" class="img-fluid p-2" alt="Meme 1">
+                            <img src="../assets/img/memes/tendencias/t2.webp" class="img-fluid p-2" alt="Imagen del meme más viral de la semana">
                         </div>
                         <div class="card-footer xp-card-footer d-flex flex-column gap-2">
                             <div class="d-flex justify-content-between align-items-center">
-                                <button class="btn btn-sm btn-light border shadow-sm" type="button" data-bs-toggle="collapse" data-bs-target="#comment-trend-1">
+                                <button class="btn btn-sm btn-light border shadow-sm" type="button" 
+                                        data-bs-toggle="collapse" data-bs-target="#comment-trend-1"
+                                        aria-label="Ver 150 comentarios">
                                     💬 Comentar (150)
                                 </button>
-                                <button class="btn btn-sm btn-light border shadow-sm like-btn">
+                                <button class="btn btn-sm btn-light border shadow-sm like-btn" aria-label="Me gusta">
                                     👍 1.2k
                                 </button>
                             </div>
                             <div class="collapse" id="comment-trend-1">
                                 <div class="card card-body p-2 bg-white border-0">
-                                    <textarea class="form-control form-control-sm mb-2" rows="2" placeholder="Únete a la discusión..."></textarea>
+                                    <textarea class="form-control form-control-sm mb-2" rows="2" placeholder="Únete a la discusión..." aria-label="Escribir comentario"></textarea>
                                     <button class="btn btn-primary btn-sm w-100">Publicar</button>
                                 </div>
                             </div>
@@ -59,20 +69,22 @@
                             <span class="badge bg-warning text-dark">Nuevo</span>
                         </header>
                         <div class="card-body text-center p-0 bg-light">
-                            <img src="../assets/img/memes/tendencias/t1.webp" class="img-fluid p-2" alt="Meme 2">
+                            <img src="../assets/img/memes/tendencias/t1.webp" class="img-fluid p-2" alt="Meme que está ganando popularidad rápidamente">
                         </div>
                         <div class="card-footer xp-card-footer d-flex flex-column gap-2">
                             <div class="d-flex justify-content-between align-items-center">
-                                <button class="btn btn-sm btn-light border shadow-sm" type="button" data-bs-toggle="collapse" data-bs-target="#comment-trend-2">
+                                <button class="btn btn-sm btn-light border shadow-sm" type="button" 
+                                        data-bs-toggle="collapse" data-bs-target="#comment-trend-2"
+                                        aria-label="Ver 88 comentarios">
                                     💬 Comentar (88)
                                 </button>
-                                <button class="btn btn-sm btn-light border shadow-sm like-btn">
+                                <button class="btn btn-sm btn-light border shadow-sm like-btn" aria-label="Me gusta">
                                     👍 980
                                 </button>
                             </div>
                             <div class="collapse" id="comment-trend-2">
                                 <div class="card card-body p-2 bg-white border-0">
-                                    <textarea class="form-control form-control-sm mb-2" rows="2" placeholder="Escribe algo..."></textarea>
+                                    <textarea class="form-control form-control-sm mb-2" rows="2" placeholder="Escribe algo..." aria-label="Escribir comentario"></textarea>
                                     <button class="btn btn-primary btn-sm w-100">Publicar</button>
                                 </div>
                             </div>
@@ -83,16 +95,16 @@
             </section>
         </div>
     </main>
-
     <footer class="xp-taskbar mt-auto py-1 px-1">
         <div class="d-flex align-items-center justify-content-between h-100">
             <div class="d-flex align-items-center flex-grow-1">
                 <div class="xp-start-wrapper position-relative me-2">
-                    <nav class="xp-start-menu-popup">
-                        <div class="xp-menu-header"><a href="https://www.instagram.com/ratawatonaa/" class="text-decoration-none">
-                            <img src="../assets/img/logo.webp" class="rounded border border-2 border-white me-2 logo" alt="User">
-                            <span class="fw-bold text-white shadow-sm">Rata Watona</span>
-                        </a>
+                    <nav class="xp-start-menu-popup" aria-label="Menú Inicio">
+                        <div class="xp-menu-header" >
+                            <a href="https://www.instagram.com/ratawatonaa/" class="d-flex align-items-center text-decoration-none">
+                                <img src="../assets/img/logo.webp" class="rounded border border-2 border-white me-2 logo" alt="Logo">
+                                <span class="fw-bold text-white shadow-sm">Rata Watona</span>
+                            </a>
                         </div>
                         <div class="xp-menu-body">
                             <ul class="list-unstyled m-0 p-2">
@@ -108,8 +120,8 @@
                             <small class="text-white">Apagar sistema...</small>
                         </div>
                     </nav>
-                    <button class="btn xp-start-btn d-flex align-items-center">
-                        <img src="../assets/img/inicio_xp.webp" alt="Inicio" height="24" class="me-1"> 
+                    <button class="btn xp-start-btn d-flex align-items-center" aria-label="Botón Inicio">
+                        <img src="../assets/img/inicio_xp.webp" alt="" height="24" class="me-1"> 
                     </button>
                 </div>
                 <div style="width: 2px; height: 20px; background: rgba(0,0,0,0.2); margin-right: 5px; border-right: 1px solid rgba(255,255,255,0.2);"></div>

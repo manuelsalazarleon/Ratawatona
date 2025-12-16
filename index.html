@@ -3,9 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explorador de memes estilo Windows XP. Encuentra humor viral, noticias y tendencias en Rata Watona.">
+    <meta name="keywords" content="memes, humor, windows xp, viral, rata watona, tendencias">
+    <meta name="author" content="Inhu.manu">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Rata Watona - Inicio XP">
+    <meta property="og:description" content="El sistema operativo del humor.">
+    <meta property="og:image" content="./assets/img/logo.webp">
+    
     <title>Meme Site - Inicio XP</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="icon" type="image/webp" href="./assets/img/logo.webp">
 </head>
 <body class="d-flex flex-column min-vh-100">
 
@@ -13,7 +22,7 @@
         
         <header class="xp-title-bar">
             <h1 class="h5 m-0 text-white">Explorador de Memes</h1>
-            <div class="xp-controls">
+            <div class="xp-controls" aria-hidden="true">
                 <span>_</span><span>□</span><span>X</span>
             </div>
         </header>
@@ -25,7 +34,7 @@
                 <aside class="d-none d-lg-block">
                     <section class="card xp-card mb-3">
                         <header class="card-header xp-card-header">
-                            <h5 class="h6 m-0">📜 Reglas del Sitio</h5>
+                            <h2 class="h6 m-0">📜 Reglas del Sitio</h2>
                         </header>
                         <div class="card-body bg-light small">
                             <ul class="list-unstyled m-0">
@@ -39,7 +48,7 @@
 
                     <section class="card xp-card">
                         <header class="card-header xp-card-header">
-                            <h5 class="h6 m-0">📰 Noticias v1.0</h5>
+                            <h2 class="h6 m-0">📰 Noticias v1.0</h2>
                         </header>
                         <div class="card-body bg-light small">
                             <p>¡Bienvenido a la versión XP de Rata Watona! Hemos actualizado el kernel para soportar más memes por segundo.</p>
@@ -55,15 +64,18 @@
                             <h3 class="card-title h6 m-0">Soy Homero pero con TEC</h3>
                         </header>
                         <div class="card-body text-center p-0 bg-light">
-                            <img src="./assets/img/memes/index/i1.webp" class="img-fluid p-2" alt="Meme 1">
+                            <img src="./assets/img/memes/index/i1.webp" class="img-fluid p-2" alt="Meme de los Simpsons sobre tecnología">
                         </div>
                         <div class="card-footer xp-card-footer d-flex flex-column gap-2">
                             <div class="d-flex justify-content-between align-items-center">
-                                <button class="btn btn-sm btn-light border shadow-sm" type="button" data-bs-toggle="collapse" data-bs-target="#comment-index-1">💬 12</button>
-                                <button class="btn btn-sm btn-light border shadow-sm like-btn">👍 238</button>
+                                <button class="btn btn-sm btn-light border shadow-sm" type="button" 
+                                        data-bs-toggle="collapse" data-bs-target="#comment-index-1"
+                                        aria-label="Ver comentarios">💬 12</button>
+                                <button class="btn btn-sm btn-light border shadow-sm like-btn" 
+                                        aria-label="Dar me gusta">👍 238</button>
                             </div>
                             <div class="collapse" id="comment-index-1">
-                                <textarea class="form-control form-control-sm mt-2" placeholder="Escribe un comentario..."></textarea>
+                                <textarea class="form-control form-control-sm mt-2" placeholder="Escribe un comentario..." aria-label="Escribir comentario"></textarea>
                             </div>
                         </div>
                     </article>
@@ -73,12 +85,15 @@
                             <h3 class="card-title h6 m-0">Expectativa vs Realidad</h3>
                         </header>
                         <div class="card-body text-center p-0 bg-light">
-                            <img src="./assets/img/memes/index/i2.webp" class="img-fluid p-2" alt="Meme 2">
+                            <img src="./assets/img/memes/index/i2.webp" class="img-fluid p-2" alt="Comparativa humorística de expectativa contra realidad">
                         </div>
                         <div class="card-footer xp-card-footer d-flex flex-column gap-2">
                             <div class="d-flex justify-content-between align-items-center">
-                                <button class="btn btn-sm btn-light border shadow-sm" type="button" data-bs-toggle="collapse" data-bs-target="#comment-index-2">💬 45</button>
-                                <button class="btn btn-sm btn-light border shadow-sm like-btn">👍 512</button>
+                                <button class="btn btn-sm btn-light border shadow-sm" type="button" 
+                                        data-bs-toggle="collapse" data-bs-target="#comment-index-2"
+                                        aria-label="Ver comentarios">💬 45</button>
+                                <button class="btn btn-sm btn-light border shadow-sm like-btn"
+                                        aria-label="Dar me gusta">👍 512</button>
                             </div>
                         </div>
                     </article>
@@ -88,12 +103,15 @@
                             <h3 class="card-title h6 m-0">Gato waton</h3>
                         </header>
                         <div class="card-body text-center p-0 bg-light">
-                            <img src="./assets/img/memes/index/i3.webp" class="img-fluid p-2" alt="Meme 3">
+                            <img src="./assets/img/memes/index/i3.webp" class="img-fluid p-2" alt="Foto graciosa de un gato gordo">
                         </div>
                         <div class="card-footer xp-card-footer d-flex flex-column gap-2">
                             <div class="d-flex justify-content-between align-items-center">
-                                <button class="btn btn-sm btn-light border shadow-sm" type="button" data-bs-toggle="collapse" data-bs-target="#comment-index-3">💬 8</button>
-                                <button class="btn btn-sm btn-light border shadow-sm like-btn">👍 199</button>
+                                <button class="btn btn-sm btn-light border shadow-sm" type="button" 
+                                        data-bs-toggle="collapse" data-bs-target="#comment-index-3"
+                                        aria-label="Ver comentarios">💬 8</button>
+                                <button class="btn btn-sm btn-light border shadow-sm like-btn"
+                                        aria-label="Dar me gusta">👍 199</button>
                             </div>
                         </div>
                     </article>
@@ -107,10 +125,10 @@
         <div class="d-flex align-items-center justify-content-between h-100">
             <div class="d-flex align-items-center flex-grow-1">
                 <div class="xp-start-wrapper position-relative me-2">
-                    <nav class="xp-start-menu-popup">
+                    <nav class="xp-start-menu-popup" aria-label="Menú Inicio">
                         <div class="xp-menu-header" >
                             <a href="https://www.instagram.com/ratawatonaa/" class="d-flex align-items-center text-decoration-none">
-                                <img src="./assets/img/logo.webp" class="rounded border border-2 border-white me-2 logo" alt="User">
+                                <img src="./assets/img/logo.webp" class="rounded border border-2 border-white me-2 logo" alt="Logo Rata Watona">
                                 <span class="fw-bold text-white shadow-sm">Rata Watona</span>
                             </a>
                         </div>
@@ -128,8 +146,8 @@
                             <small class="text-white">Apagar sistema...</small>
                         </div>
                     </nav>
-                    <button class="btn xp-start-btn d-flex align-items-center">
-                        <img src="./assets/img/inicio_xp.webp" alt="Inicio" height="24" class="me-1"> 
+                    <button class="btn xp-start-btn d-flex align-items-center" aria-label="Botón Inicio">
+                        <img src="./assets/img/inicio_xp.webp" alt="" height="24" class="me-1"> 
                     </button>
                 </div>
                 <div style="width: 2px; height: 20px; background: rgba(0,0,0,0.2); margin-right: 5px; border-right: 1px solid rgba(255,255,255,0.2);"></div>
@@ -145,7 +163,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        // Script simple para interactividad
         document.querySelectorAll('.like-btn').forEach(button => {
             button.addEventListener('click', function() {
                 this.classList.toggle('btn-primary'); 

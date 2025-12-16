@@ -3,16 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Foro de discusión sobre memes y cultura pop. Participa en los debates.">
+    <meta name="keywords" content="foro, discusión, comunidad, memes, debate">
+    <meta name="author" content="Inhu.manu">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Foro - Rata Watona">
+    <meta property="og:image" content="../assets/img/logo.webp">
+
     <title>Meme Site - Foro</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="icon" type="image/webp" href="../assets/img/logo.webp">
 </head>
 <body class="d-flex flex-column min-vh-100">
 
     <main class="container my-4 flex-grow-1 xp-window">
         <header class="xp-title-bar">
             <h1 class="h5 m-0 text-white">Foro de Discusión XP</h1>
-            <div class="xp-controls">
+            <div class="xp-controls" aria-hidden="true">
                 <span>_</span><span>□</span><span>X</span>
             </div>
         </header>
@@ -26,7 +34,7 @@
                     <div class="col-12 col-md-4">
                         <div class="card xp-card bg-light h-100">
                             <div class="card-body">
-                                <h5 class="h6 fw-bold">Hilo: ¿Volverá Windows 98?</h5>
+                                <h3 class="h6 fw-bold">Hilo: ¿Volverá Windows 98?</h3>
                                 <p class="card-text small text-muted">Último post: hace 5 min</p>
                             </div>
                             <div class="card-footer xp-card-footer">
@@ -38,7 +46,7 @@
                     <div class="col-12 col-md-4">
                         <div class="card xp-card bg-light h-100">
                             <div class="card-body">
-                                <h5 class="h6 fw-bold">¿Cuál es el mejor meme de la semana?</h5>
+                                <h3 class="h6 fw-bold">¿Cuál es el mejor meme de la semana?</h3>
                                 <p class="card-text small text-muted">Último post: hace 2 horas</p>
                             </div>
                             <div class="card-footer xp-card-footer">
@@ -50,7 +58,7 @@
                     <div class="col-12 col-md-4">
                         <div class="card xp-card bg-light h-100">
                             <div class="card-body">
-                                <h5 class="h6 fw-bold">Recomendaciones de música Y2K</h5>
+                                <h3 class="h6 fw-bold">Recomendaciones de música Y2K</h3>
                                 <p class="card-text small text-muted">Último post: ayer</p>
                             </div>
                             <div class="card-footer xp-card-footer">
@@ -97,7 +105,7 @@
         <div class="d-flex align-items-center justify-content-between h-100">
             <div class="d-flex align-items-center flex-grow-1">
                 <div class="xp-start-wrapper position-relative me-2">
-                    <div class="xp-start-menu-popup">
+                    <div class="xp-start-menu-popup" aria-label="Menú inicio">
                         <div class="xp-menu-header" >
                             <a href="https://www.instagram.com/ratawatonaa/" class="d-flex align-items-center text-decoration-none">
                                 <img src="../assets/img/logo.webp" class="rounded border border-2 border-white me-2 logo" alt="User">
@@ -119,8 +127,8 @@
                             <small class="text-white">Apagar sistema...</small>
                         </div>
                     </div>
-                    <button class="btn xp-start-btn d-flex align-items-center">
-                        <img src="../assets/img/inicio_xp.webp" alt="Inicio" height="24" class="me-1"> 
+                    <button class="btn xp-start-btn d-flex align-items-center" aria-label="Botón inicio">
+                        <img src="../assets/img/inicio_xp.webp" alt="" height="24" class="me-1"> 
                     </button>
                 </div>
                 <div style="width: 2px; height: 20px; background: rgba(0,0,0,0.2); margin-right: 5px; border-right: 1px solid rgba(255,255,255,0.2);"></div>
