@@ -24,7 +24,7 @@
                 <aside class="text-center">
                     <div class="border p-3 bg-white shadow-sm h-100 d-flex flex-column align-items-center">
                         <div class="bg-light border p-1 mb-3">
-                            <img src="../assets/img/logo.jpg" alt="Avatar" class="img-fluid" style="max-width:150px;">
+                            <img src="../assets/img/logo.webp" alt="Avatar" class="img-fluid" style="max-width:150px;">
                         </div>
                         <h2 class="h4">Usuario</h2>
                         <p class="text-muted small">correo@electronico.com</p>
@@ -37,14 +37,16 @@
 
                 <section class="bg-white p-3 border h-100">
                     
-                    <ul class="nav nav-tabs mb-3" id="profileTabs" role="tablist">
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="memes-tab" data-bs-toggle="tab" data-bs-target="#memes" type="button">Mis Memes</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="favoritos-tab" data-bs-toggle="tab" data-bs-target="#favoritos" type="button">Favoritos</button>
-                        </li>
-                    </ul>
+                    <nav>
+                        <ul class="nav nav-tabs mb-3" id="profileTabs" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="memes-tab" data-bs-toggle="tab" data-bs-target="#memes" type="button">Mis Memes</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="favoritos-tab" data-bs-toggle="tab" data-bs-target="#favoritos" type="button">Favoritos</button>
+                            </li>
+                        </ul>
+                    </nav>
 
                     <div class="tab-content" id="profileTabsContent">
                         <div class="tab-pane fade show active" id="memes" role="tabpanel">
@@ -55,7 +57,7 @@
                                     <div class="card-body p-2">
                                         <small class="fw-bold d-block text-truncate">Mi primer meme</small>
                                     </div>
-                                    <img src="../assets/img/memes/perfil/pr1.jpg" class="card-img-top p-1" alt="Meme propio">
+                                    <img src="../assets/img/memes/perfil/pr1.webp" class="card-img-top p-1" alt="Meme propio">
                                     <div class="card-footer xp-card-footer">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <button class="btn btn-sm btn-light border shadow-sm p-1">💬 5</button>
@@ -68,7 +70,7 @@
                                     <div class="card-body p-2">
                                         <small class="fw-bold d-block text-truncate">Otro meme</small>
                                     </div>
-                                    <img src="../assets/img/memes/perfil/pr2.jpg" class="card-img-top p-1" alt="Meme propio">
+                                    <img src="../assets/img/memes/perfil/pr2.webp" class="card-img-top p-1" alt="Meme propio">
                                     <div class="card-footer xp-card-footer">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <button class="btn btn-sm btn-light border shadow-sm p-1">💬 18</button>
@@ -94,10 +96,10 @@
         <div class="d-flex align-items-center justify-content-between h-100">
             <div class="d-flex align-items-center flex-grow-1">
                 <div class="xp-start-wrapper position-relative me-2">
-                    <div class="xp-start-menu-popup">
+                    <nav class="xp-start-menu-popup">
                         <div class="xp-menu-header" >
                             <a href="https://www.instagram.com/ratawatonaa/" class="d-flex align-items-center text-decoration-none">
-                                <img src="../assets/img/logo.jpg" class="rounded border border-2 border-white me-2 logo" alt="User">
+                                <img src="../assets/img/logo.webp" class="rounded border border-2 border-white me-2 logo" alt="User">
                                 <span class="fw-bold text-white shadow-sm">Rata Watona</span>
                             </a>
                         </div>
@@ -106,7 +108,7 @@
                                 <li><a href="../index.html" class="xp-menu-item">🏠 Inicio</a></li>
                                 <li><a href="./tendencias.html" class="xp-menu-item">📈 Tendencias</a></li>
                                 <li><a href="./Categorias.html" class="xp-menu-item">📂 Categorías</a></li>
-                                <li class="my-1 border-top"></li>
+                                <li><a href="./Foro.html" class="xp-menu-item">💬 Foro</a></li> <li class="my-1 border-top"></li>
                                 <li><a href="./Subir.html" class="xp-menu-item">⬆️ Subir Meme</a></li>
                                 <li><a href="./Perfil.html" class="xp-menu-item">👤 Mi Perfil</a></li>
                             </ul>
@@ -114,9 +116,9 @@
                         <div class="xp-menu-footer text-end p-2">
                             <small class="text-white">Apagar sistema...</small>
                         </div>
-                    </div>
+                    </nav>
                     <button class="btn xp-start-btn d-flex align-items-center">
-                        <img src="../assets/img/inicio_xp.png" alt="Inicio" height="24" class="me-1"> 
+                        <img src="../assets/img/inicio_xp.webp" alt="Inicio" height="24" class="me-1"> 
                         
                     </button>
                 </div>

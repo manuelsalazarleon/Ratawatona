@@ -18,46 +18,49 @@
         </header>
 
         <div class="xp-content-wrapper">
-            <p class="mb-3">Haz clic en una carpeta para ver su contenido:</p>
             
-            <div class="nav nav-pills row row-cols-2 row-cols-md-4 g-3 mb-4" id="category-tabs" role="tablist">
-                <div class="col">
-                    <button class="nav-link active w-100 btn btn-light border p-3 h-100 d-flex flex-column align-items-center gap-2 shadow-sm text-dark" 
-                            id="tab-animales" data-bs-toggle="pill" data-bs-target="#content-animales" type="button">
-                        <span class="fw-bold">Humor pop</span>
-                    </button>
-                </div>
-                <div class="col">
-                    <button class="nav-link w-100 btn btn-light border p-3 h-100 d-flex flex-column align-items-center gap-2 shadow-sm text-dark" 
-                            id="tab-juegos" data-bs-toggle="pill" data-bs-target="#content-juegos" type="button">
-                        <span class="fw-bold">Política y Religión</span>
-                    </button>
-                </div>
-                <div class="col">
-                    <button class="nav-link w-100 btn btn-light border p-3 h-100 d-flex flex-column align-items-center gap-2 shadow-sm text-dark" 
-                            id="tab-prog" data-bs-toggle="pill" data-bs-target="#content-prog" type="button">
-                        <span class="fw-bold">Disidencias</span>
-                    </button>
-                </div>
-                 <div class="col">
-                    <button class="nav-link w-100 btn btn-light border p-3 h-100 d-flex flex-column align-items-center gap-2 shadow-sm text-dark" 
-                            id="tab-otros" data-bs-toggle="pill" data-bs-target="#content-otros" type="button">
-                        <span class="fw-bold">Heteros</span>
-                    </button>
-                </div>
-            </div>
+            <section class="mb-4">
+                <p class="mb-3">Haz clic en una carpeta para ver su contenido:</p>
+                
+                <nav class="nav nav-pills row row-cols-2 row-cols-md-4 g-3" id="category-tabs" role="tablist">
+                    <div class="col">
+                        <button class="nav-link active w-100 btn btn-light border p-3 h-100 d-flex flex-column align-items-center gap-2 shadow-sm text-dark" 
+                                id="tab-animales" data-bs-toggle="pill" data-bs-target="#content-animales" type="button">
+                            <span class="fw-bold">Humor pop</span>
+                        </button>
+                    </div>
+                    <div class="col">
+                        <button class="nav-link w-100 btn btn-light border p-3 h-100 d-flex flex-column align-items-center gap-2 shadow-sm text-dark" 
+                                id="tab-juegos" data-bs-toggle="pill" data-bs-target="#content-juegos" type="button">
+                            <span class="fw-bold">Política y Religión</span>
+                        </button>
+                    </div>
+                    <div class="col">
+                        <button class="nav-link w-100 btn btn-light border p-3 h-100 d-flex flex-column align-items-center gap-2 shadow-sm text-dark" 
+                                id="tab-prog" data-bs-toggle="pill" data-bs-target="#content-prog" type="button">
+                            <span class="fw-bold">Disidencias</span>
+                        </button>
+                    </div>
+                    <div class="col">
+                        <button class="nav-link w-100 btn btn-light border p-3 h-100 d-flex flex-column align-items-center gap-2 shadow-sm text-dark" 
+                                id="tab-otros" data-bs-toggle="pill" data-bs-target="#content-otros" type="button">
+                            <span class="fw-bold">Heteros</span>
+                        </button>
+                    </div>
+                </nav>
+            </section>
 
             <hr class="border-secondary">
 
-            <div class="tab-content" id="category-content">
+            <section class="tab-content" id="category-content">
                 
                 <div class="tab-pane fade show active" id="content-animales" role="tabpanel">
                     <h3 class="h6 mb-3 text-secondary">📂 Archivos en: Humor pop</h3>
                     
                     <div class="custom-grid-layout">
                         <article class="card xp-card">
-                            <div class="card-header xp-card-header"><h3 class="card-title h6 m-0">Q vuelva tierra 2</h3></div>
-                            <div class="card-body text-center p-0 bg-light"><img src="../assets/img/memes/humor pop/hp1.jpg" class="img-fluid p-2" alt="Meme"></div>
+                            <header class="card-header xp-card-header"><h3 class="card-title h6 m-0">Q vuelva tierra 2</h3></header>
+                            <div class="card-body text-center p-0 bg-light"><img src="../assets/img/memes/humor pop/hp1.webp" class="img-fluid p-2" alt="Meme"></div>
                             <div class="card-footer xp-card-footer d-flex flex-column gap-2">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <button class="btn btn-sm btn-light border shadow-sm" data-bs-toggle="collapse" data-bs-target="#c-ani-1">💬 10</button>
@@ -68,8 +71,8 @@
                         </article>
                         
                         <article class="card xp-card">
-                            <div class="card-header xp-card-header"><h3 class="card-title h6 m-0">Lakiero mucho</h3></div>
-                            <div class="card-body text-center p-0 bg-light"><img src="../assets/img/memes/humor pop/hp2.jpg" class="img-fluid p-2" alt="Meme"></div>
+                            <header class="card-header xp-card-header"><h3 class="card-title h6 m-0">Lakiero mucho</h3></header>
+                            <div class="card-body text-center p-0 bg-light"><img src="../assets/img/memes/humor pop/hp2.webp" class="img-fluid p-2" alt="Meme"></div>
                             <div class="card-footer xp-card-footer d-flex flex-column gap-2">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <button class="btn btn-sm btn-light border shadow-sm" data-bs-toggle="collapse" data-bs-target="#c-ani-2">💬 5</button>
@@ -78,25 +81,25 @@
                             </div>
                         </article>
                         <article class="card xp-card">
-                            <div class="card-header xp-card-header"><h3 class="card-title h6 m-0">???????</h3></div>
-                            <div class="card-body text-center p-0 bg-light"><img src="../assets/img/memes/humor pop/hp3.jpg" class="img-fluid p-2" alt="Meme"></div>
+                            <header class="card-header xp-card-header"><h3 class="card-title h6 m-0">???????</h3></header>
+                            <div class="card-body text-center p-0 bg-light"><img src="../assets/img/memes/humor pop/hp3.webp" class="img-fluid p-2" alt="Meme"></div>
                             <div class="card-footer xp-card-footer d-flex flex-column gap-2">
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <button class="btn btn-sm btn-light border shadow-sm" data-bs-toggle="collapse" data-bs-target="#c-ani-1">💬 10</button>
+                                    <button class="btn btn-sm btn-light border shadow-sm" data-bs-toggle="collapse" data-bs-target="#c-ani-1-shared">💬 10</button>
                                     <button class="btn btn-sm btn-light border shadow-sm like-btn">👍 500</button>
                                 </div>
-                                <div class="collapse" id="c-ani-1"><input type="text" class="form-control form-control-sm" placeholder="Comentar..."></div>
+                                <div class="collapse" id="c-ani-1-shared"><input type="text" class="form-control form-control-sm" placeholder="Comentar..."></div>
                             </div>
                         </article>
                         <article class="card xp-card">
-                            <div class="card-header xp-card-header"><h3 class="card-title h6 m-0">Trans-vip</h3></div>
-                            <div class="card-body text-center p-0 bg-light"><img src="../assets/img/memes/humor pop/hp4.jpg" class="img-fluid p-2" alt="Meme"></div>
+                            <header class="card-header xp-card-header"><h3 class="card-title h6 m-0">Trans-vip</h3></header>
+                            <div class="card-body text-center p-0 bg-light"><img src="../assets/img/memes/humor pop/hp4.webp" class="img-fluid p-2" alt="Meme"></div>
                             <div class="card-footer xp-card-footer d-flex flex-column gap-2">
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <button class="btn btn-sm btn-light border shadow-sm" data-bs-toggle="collapse" data-bs-target="#c-ani-1">💬 10</button>
+                                    <button class="btn btn-sm btn-light border shadow-sm" data-bs-toggle="collapse" data-bs-target="#c-ani-1-shared-2">💬 10</button>
                                     <button class="btn btn-sm btn-light border shadow-sm like-btn">👍 500</button>
                                 </div>
-                                <div class="collapse" id="c-ani-1"><input type="text" class="form-control form-control-sm" placeholder="Comentar..."></div>
+                                <div class="collapse" id="c-ani-1-shared-2"><input type="text" class="form-control form-control-sm" placeholder="Comentar..."></div>
                             </div>
                         </article>
                         </div>
@@ -107,8 +110,8 @@
                     
                     <div class="custom-grid-layout">
                         <article class="card xp-card">
-                            <div class="card-header xp-card-header"><h3 class="card-title h6 m-0">El inicio de toda tilina</h3></div>
-                            <div class="card-body text-center p-0 bg-light"><img src="../assets/img/memes/politicayreligion/p1.jpg" class="img-fluid p-2" alt="Meme"></div>
+                            <header class="card-header xp-card-header"><h3 class="card-title h6 m-0">El inicio de toda tilina</h3></header>
+                            <div class="card-body text-center p-0 bg-light"><img src="../assets/img/memes/politicayreligion/p1.webp" class="img-fluid p-2" alt="Meme"></div>
                             <div class="card-footer xp-card-footer d-flex flex-column gap-2">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <button class="btn btn-sm btn-light border shadow-sm">💬 99</button>
@@ -117,8 +120,8 @@
                             </div>
                         </article>
                         <article class="card xp-card">
-                            <div class="card-header xp-card-header"><h3 class="card-title h6 m-0">Los que leo en Wattapad</h3></div>
-                            <div class="card-body text-center p-0 bg-light"><img src="../assets/img/memes/politicayreligion/p2.jpg" class="img-fluid p-2" alt="Meme"></div>
+                            <header class="card-header xp-card-header"><h3 class="card-title h6 m-0">Los que leo en Wattapad</h3></header>
+                            <div class="card-body text-center p-0 bg-light"><img src="../assets/img/memes/politicayreligion/p2.webp" class="img-fluid p-2" alt="Meme"></div>
                             <div class="card-footer xp-card-footer d-flex flex-column gap-2">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <button class="btn btn-sm btn-light border shadow-sm">💬 99</button>
@@ -127,8 +130,8 @@
                             </div>
                         </article>
                         <article class="card xp-card">
-                            <div class="card-header xp-card-header"><h3 class="card-title h6 m-0">Por que no traen unas...</h3></div>
-                            <div class="card-body text-center p-0 bg-light"><img src="../assets/img/memes/politicayreligion/p3.jpg" class="img-fluid p-2" alt="Meme"></div>
+                            <header class="card-header xp-card-header"><h3 class="card-title h6 m-0">Por que no traen unas...</h3></header>
+                            <div class="card-body text-center p-0 bg-light"><img src="../assets/img/memes/politicayreligion/p3.webp" class="img-fluid p-2" alt="Meme"></div>
                             <div class="card-footer xp-card-footer d-flex flex-column gap-2">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <button class="btn btn-sm btn-light border shadow-sm">💬 99</button>
@@ -137,8 +140,8 @@
                             </div>
                         </article>
                         <article class="card xp-card">
-                            <div class="card-header xp-card-header"><h3 class="card-title h6 m-0">AAAAAAA</h3></div>
-                            <div class="card-body text-center p-0 bg-light"><img src="../assets/img/memes/politicayreligion/p4.jpg" class="img-fluid p-2" alt="Meme"></div>
+                            <header class="card-header xp-card-header"><h3 class="card-title h6 m-0">AAAAAAA</h3></header>
+                            <div class="card-body text-center p-0 bg-light"><img src="../assets/img/memes/politicayreligion/p4.webp" class="img-fluid p-2" alt="Meme"></div>
                             <div class="card-footer xp-card-footer d-flex flex-column gap-2">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <button class="btn btn-sm btn-light border shadow-sm">💬 99</button>
@@ -153,8 +156,8 @@
                     
                     <div class="custom-grid-layout">
                         <article class="card xp-card">
-                            <div class="card-header xp-card-header"><h3 class="card-title h6 m-0">MMMMmMmmM</h3></div>
-                            <div class="card-body text-center p-0 bg-light"><img src="../assets/img/memes/disidencias/m1.jpg" class="img-fluid p-2" alt="Meme"></div>
+                            <header class="card-header xp-card-header"><h3 class="card-title h6 m-0">MMMMmMmmM</h3></header>
+                            <div class="card-body text-center p-0 bg-light"><img src="../assets/img/memes/disidencias/m1.webp" class="img-fluid p-2" alt="Meme"></div>
                             <div class="card-footer xp-card-footer d-flex flex-column gap-2">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <button class="btn btn-sm btn-light border shadow-sm">💬 99</button>
@@ -163,8 +166,8 @@
                             </div>
                         </article>
                         <article class="card xp-card">
-                            <div class="card-header xp-card-header"><h3 class="card-title h6 m-0">Sisoy</h3></div>
-                            <div class="card-body text-center p-0 bg-light"><img src="../assets/img/memes/disidencias/m2.jpg" class="img-fluid p-2" alt="Meme"></div>
+                            <header class="card-header xp-card-header"><h3 class="card-title h6 m-0">Sisoy</h3></header>
+                            <div class="card-body text-center p-0 bg-light"><img src="../assets/img/memes/disidencias/m2.webp" class="img-fluid p-2" alt="Meme"></div>
                             <div class="card-footer xp-card-footer d-flex flex-column gap-2">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <button class="btn btn-sm btn-light border shadow-sm">💬 99</button>
@@ -173,8 +176,8 @@
                             </div>
                         </article>
                         <article class="card xp-card">
-                            <div class="card-header xp-card-header"><h3 class="card-title h6 m-0">Sisomos</h3></div>
-                            <div class="card-body text-center p-0 bg-light"><img src="../assets/img/memes/disidencias/m3.jpg" class="img-fluid p-2" alt="Meme"></div>
+                            <header class="card-header xp-card-header"><h3 class="card-title h6 m-0">Sisomos</h3></header>
+                            <div class="card-body text-center p-0 bg-light"><img src="../assets/img/memes/disidencias/m3.webp" class="img-fluid p-2" alt="Meme"></div>
                             <div class="card-footer xp-card-footer d-flex flex-column gap-2">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <button class="btn btn-sm btn-light border shadow-sm">💬 99</button>
@@ -183,8 +186,8 @@
                             </div>
                         </article>
                         <article class="card xp-card">
-                            <div class="card-header xp-card-header"><h3 class="card-title h6 m-0">AAAAAAA</h3></div>
-                            <div class="card-body text-center p-0 bg-light"><img src="../assets/img/memes/disidencias/m4.jpg" class="img-fluid p-2" alt="Meme"></div>
+                            <header class="card-header xp-card-header"><h3 class="card-title h6 m-0">AAAAAAA</h3></header>
+                            <div class="card-body text-center p-0 bg-light"><img src="../assets/img/memes/disidencias/m4.webp" class="img-fluid p-2" alt="Meme"></div>
                             <div class="card-footer xp-card-footer d-flex flex-column gap-2">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <button class="btn btn-sm btn-light border shadow-sm">💬 99</button>
@@ -200,17 +203,17 @@
                     </div>
                 </div>
 
-            </div>
+            </section>
         </div>
     </main>
     <footer class="xp-taskbar mt-auto py-1 px-1">
         <div class="d-flex align-items-center justify-content-between h-100">
             <div class="d-flex align-items-center flex-grow-1">
                 <div class="xp-start-wrapper position-relative me-2">
-                    <div class="xp-start-menu-popup">
+                    <nav class="xp-start-menu-popup">
                         <div class="xp-menu-header" >
                             <a href="https://www.instagram.com/ratawatonaa/" class="d-flex align-items-center text-decoration-none">
-                                <img src="../assets/img/logo.jpg" class="rounded border border-2 border-white me-2 logo" alt="User">
+                                <img src="../assets/img/logo.webp" class="rounded border border-2 border-white me-2 logo" alt="User">
                                 <span class="fw-bold text-white shadow-sm">Rata Watona</span>
                             </a>
                         </div>
@@ -219,7 +222,7 @@
                                 <li><a href="../index.html" class="xp-menu-item">🏠 Inicio</a></li>
                                 <li><a href="./tendencias.html" class="xp-menu-item">📈 Tendencias</a></li>
                                 <li><a href="./Categorias.html" class="xp-menu-item">📂 Categorías</a></li>
-                                <li class="my-1 border-top"></li>
+                                <li><a href="./Foro.html" class="xp-menu-item">💬 Foro</a></li> <li class="my-1 border-top"></li>
                                 <li><a href="./Subir.html" class="xp-menu-item">⬆️ Subir Meme</a></li>
                                 <li><a href="./Perfil.html" class="xp-menu-item">👤 Mi Perfil</a></li>
                             </ul>
@@ -227,9 +230,9 @@
                         <div class="xp-menu-footer text-end p-2">
                             <small class="text-white">Apagar sistema...</small>
                         </div>
-                    </div>
+                    </nav>
                     <button class="btn xp-start-btn d-flex align-items-center">
-                        <img src="../assets/img/inicio_xp.png" alt="Inicio" height="24" class="me-1"> 
+                        <img src="../assets/img/inicio_xp.webp" alt="Inicio" height="24" class="me-1"> 
                         
                     </button>
                 </div>
